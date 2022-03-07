@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<style>
+/* Background
+   ========================================================================== */
+
+body{
+    background-color: lightblue;
+}
+/* Logo
+   ========================================================================== */
+
+.Logo {
+  width: 100%;
+  height: 400px;
+  margin: auto;
+  display: block;
+
+}
+
+/* Lists
+   ========================================================================== */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  background-color: #333333;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+div li, section li {
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Tables
+   ========================================================================== */
+
+tr,th{
+    border: 1px solid black;
+}
+
+.Tabla{
+    border-collapse: separate; 
+    border-spacing: 40px;
+}
+
+.TableH{
+    background-color: aquamarine;
+
+}
+
+.urgent{
+    color: red
+;
+}
+</style>
+</head>
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="/Users/miguel/Documents/Innovaccion/Pastelería/Assets/Pastelot.png" alt="Logo Pasteleria" width=100 height=50></li>
+                <li><a href="#"> Menu </a></li>
+                <li><a href="#"> Ingresa Pastelero</a></li>
+            </ul>
+        </nav>
+        <img class="Logo" src="/Users/miguel/Documents/Innovaccion/Pastelería/Assets/Pastelot.png" alt="Logo Pastelot">
+    </header>
+
+    <section>
+        <h1> ¡Bienvenido Pastelero! </h1>
+        
+        <section>
+            <h2> Estos son los Inventarios de Sabores </h2>
+            <table class="Tabla">
+                <tr class="TableH">
+                    <th>Sabores</th>
+                    <th>Cantidad</th>
+                    <th>Aviso</th>
+                </tr>
+                <tr>
+                    <th>Chocolate</th>
+                    <th> 10 </th>
+                    <th> Hay suficiente Inventario </th>
+                </tr>
+                <tr>
+                    <th>Vainilla</th>
+                    <th> 8 </th>
+                    <th> Hay suficiente Inventario </th>
+                </tr>
+                <tr>
+                    <th>Red Velvet</th>
+                    <th> 2 </th>
+                    <th class="urgent"> ¡Hay que hacer una nueva orden! </th>
+                </tr>
+                <tr>
+                    <th>Limón</th>
+                    <th> 12 </th>
+                    <th> Hay suficiente Inventario </th>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2> Estos son los Inventarios de Adornos </h2>
+            <table class="Tabla">
+                <tr class="TableH">
+                    <th>Adornos</th>
+                    <th>Cantidad</th>
+                    <th>Aviso</th>
+                </tr>
+                <tr>
+                    <th>Vela</th>
+                    <th> 10 </th>
+                    <th> Hay suficiente Inventario </th>
+                </tr>
+                <tr>
+                    <th>Nombre con Fondant</th>
+                    <th> 8 </th>
+                    <th> Hay suficiente Inventario </th>
+                </tr>
+                <tr>
+                    <th>Nombre o Leyenda con Chocolate</th>
+                    <th> 2 </th>
+                    <th class="urgent"> ¡Hay que hacer una nueva orden! </th>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2> Pedidos </h2>
+            <table class="Tabla">
+                <tr class="TableH">
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Telefono</th>
+                    <th>Descripción General del Pastel </th>
+                </tr>
+                <tr>
+                    <th>Raúl Rumano</th>
+                    <th>raulrum@pastelmail.com</th>
+                    <th>9966996699</th>
+                    <th>Quiero un Pastel de Pikachu con los sabores que seleccione de chocolate, vainilla, que tenga una vela de pikachu y mi nombre en chocolate sólido </th>
+                </tr>
+                <tr>
+                    <th>Paola Papnuka</th>
+                    <th>Paolapap@pastelmail.com</th>
+                    <th>5544554455</th>
+                    <th>Quiero un Pastel de Limon con mi nombre en Fondant </th>
+                </tr>
+                <tr>
+                    <th>Jimena Jinetes</th>
+                    <th>Jimenajin@pastelmail.com</th>
+                    <th>5533663344</th>
+                    <th>Quiero un Pastel de Red Velvet y Vainilla con mi nombre en Chocolate sólido </th>
+                </tr>
+            </table>
+        </section>
+                
+
+
+        
+
+        
+    
+</body>
+</html>
