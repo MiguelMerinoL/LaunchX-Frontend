@@ -1,0 +1,738 @@
+html{
+     font-size: 62.5%;
+     box-sizing: border-box;
+}
+
+*, *:before, *:after {
+     box-sizing: inherit;
+ }
+ 
+
+
+/* Clear fix */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Outfit:wght@200;400;600&display=swap&family=Be+Vietnam+Pro:wght@800&display=swap');
+
+
+:root{
+     /* Fonts */
+     --font-Heading: 'Montserrat', sans-serif;
+     --font-Heading-bold: 'Be Vietnam Pro', sans-serif;
+     --font-body: 'Outfit', sans-serif;
+
+     /*Size*/
+     --thin: 200;
+     --regular: 400;
+     --big: 600;
+
+     /*Colors*/
+     --blue: #2448da;
+     --strong-blue: #1f3e72;
+     --light-blue: #e7f3fc;
+     --gray: #697383;
+     --white: #ffffff;
+     --yellow: #ffbb00;
+
+}
+
+
+
+body {
+     font-family: var(--font-body);
+     font-size: 1.5rem;
+     line-height: 1.5;
+
+}
+
+h1,h2,h3,h4 {
+     font-family: var(--font-Heading);
+     text-align: center;
+     text-transform: uppercase;
+}
+
+h1{
+     font-size: 3.6rem;
+}
+h2 {
+     font-size: 3.4rem;
+}
+h3 {
+     font-size: 3.2rem;
+}
+h4 {
+     font-size: 3rem;
+}
+ 
+p {
+     font-size: 2rem;
+}
+ 
+a {
+     text-decoration: none;
+     font-size: 2rem;
+}
+ 
+ul, li{
+     list-style: none;
+     padding-left: 0;
+}
+ 
+img, picture, video{
+     width: 100%;
+     display: block;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.Cnt{
+     width: min(80%, 120rem);
+     margin: 0 auto;
+}
+
+.Sct{
+     margin-top: 2.5rem;
+     margin-bottom: 2.5rem;
+}
+
+/* Navigation */
+
+.Nav {
+     background: rgb(255,255,255);
+     background: linear-gradient(90deg, rgba(255,255,255,0) 50%, rgb(222,240,255) 55%);
+     padding: 1.5;
+
+}
+
+.Headbar{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.Logo{
+     font-weight: var(--big);
+     font-size: 3rem;
+     color: var(--blue)
+}
+
+nav{
+     display: flex;
+     gap: 4rem;
+}
+
+nav a{
+     color: var(--gray);
+     font-size: 1.8rem;
+}
+
+.Bbutton a{
+     background-color: var(--blue);
+     padding: 1rem 2rem 1rem 2rem;
+     border-radius: .5rem;
+     color: var(--white);
+     box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.22);
+     -webkit-box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.22);
+     -moz-box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.22);
+}
+
+header{
+     position: relative;
+     display: grid;    
+     grid-template-columns: repeat(2, 1fr);
+     gap: 1rem;
+}
+
+/* First Block */
+
+.C1{
+     padding-left: 8rem;
+     background-image: url(Assets/Pattern.jpeg);
+     background-blend-mode: soft-light;
+     height: 70rem;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: left center;
+}
+
+.C1 h1{
+     color: var(--strong-blue);
+     font-weight: var(--big);
+     font-family: var(--font-Heading-bold);
+     text-transform: initial;
+     font-size: 5rem;
+     width: 90%;
+     text-align: left;
+}
+
+.C1 p, span{
+     color: var(--gray);
+     font-size: 2rem;
+}
+
+.Stickers{
+     display: flex;
+     align-items: center;
+     gap: 1rem;
+}
+
+.fa-solid{
+     color: var(--yellow);
+}
+
+.fa-clock{
+     color: var(--blue);
+}
+ 
+.Sticker{
+     margin-top: 8rem;
+}
+
+.Sticker span{
+     color: var(--strong-blue);
+     font-weight: var(--big);
+
+}
+
+.doctor{
+     background-image: url(Assets/Doctor.jpeg);
+     background-blend-mode: soft-light;
+     height: 70rem;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+}
+
+ /* Second Block - Schedule */
+
+.Schdl{
+     position: absolute;
+     display: flex;
+     gap: 8rem;
+     align-items: center;
+     padding: 1rem;
+     box-shadow: 0px 10px 40px rgba(3, 19, 23, 0.25);
+     border-radius: 1rem;
+     margin: -16rem 1rem 1rem 15rem;
+     background-color: var(--white);
+}
+ 
+.Schdl-cont i{
+     color: var(--blue);
+}
+ 
+.Schdl-cont p{
+     padding-left: 1rem;
+}
+ 
+.Schdl-btn{
+     padding: 2rem;
+}
+ 
+.Schdl-btn a{
+     padding-left: 4rem;
+     padding-right: 4rem;
+}
+
+.schdl-txt{
+     color: var(--strong-blue);
+     font-weight: var(--big);
+}
+ 
+ /* Brands */
+
+.Brands{
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 1rem;
+}
+ 
+.Brands img{
+     object-fit: cover;
+}
+
+
+
+/* Third Block */
+
+.cWhy h2{
+     color: var(--strong-blue);
+     font-weight: var(--big);
+     font-family: var(--font-Heading-bold);
+     text-transform: initial;
+     font-size: 4rem;
+     width: 90%;
+     text-align: left;
+}
+ 
+.cWhy p{
+     color: var(--gray);
+     font-size: 2rem;
+     width: 50%;
+}
+ 
+.info-cards{
+     margin-top: 10rem;
+     margin-bottom: 10rem;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 2rem;
+}
+ 
+.cards{
+     box-shadow: 0px 5px 15px rgba(222, 240, 255);
+     border-radius: .5rem;
+     padding: 3rem;
+}
+ 
+.cards i{
+     color: var(--blue);
+     background-color: var(--light-blue);
+     padding: 1rem;
+     border-radius: .5rem;
+     font-size: 3rem;
+}
+ 
+.cards h3{
+     color: var(--strong-blue);
+     font-weight: var(--big);
+     font-family: var(--font-Heading-bold);
+     text-transform: initial;
+     font-size: 1.5rem;
+     width: 100%;
+     text-align: left;
+}
+ 
+.cards p{
+     color: var(--gray);
+     font-size: 1.2rem;
+     width: 100%;
+}
+
+/* Preparation */
+
+.Prep-Dsgn{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 2rem;
+}
+ 
+.Woman{
+     margin-top: 5rem;
+     padding-left: 8rem;
+     background-image: url(Assets/Woman.jpeg);
+     background-blend-mode: soft-light;
+     height: 60rem;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+} 
+ 
+.Prep-Cont h2{
+     color: var(--strong-blue);
+     font-weight: var(--big);
+     font-family: var(--font-Heading-bold);
+     text-transform: initial;
+     font-size: 3.5rem;
+     width: 100%;
+     text-align: left;
+}
+ 
+.Prep-Cont p, span{
+     color: var(--gray);
+     font-size: 2rem;
+     width: 100%;
+}
+ 
+.Collapse-list{
+     margin-top: 2rem;
+     padding: 4rem;
+}
+ 
+.collapse {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+ 
+.collapse {
+     color: var(--strong-blue);
+     font-weight: var(--big);
+     font-family: var(--font-Heading-bold);
+     text-transform: initial;
+     font-size: 1.5rem;
+     text-align: left;
+     background-color: var(--white);
+     cursor: pointer;
+     padding: 1rem;
+     width: 100%;
+     border: none;
+     outline: none;
+     margin-top: 1.5rem;
+     border-radius: .5rem;
+     box-shadow: 0px 2px 5px rgb(216, 216, 216);
+     transition-duration: 0.5s;
+}
+   
+.collapse i{
+     font-size: 2rem;
+     color: var(--blue);
+     padding-right: 1rem;
+     background-color: var(--light-blue);
+     padding: .8rem;
+     border-radius: .5rem;
+}
+ 
+.active, .collapse:hover {
+     transition-duration: 0.5s;
+     background-color: var(--light-blue);
+}
+   
+.cInfo {
+     transition-duration: 0.5s;
+     padding: 0 18px;
+     background-color: white;
+     display: none;
+     overflow: hidden;
+}
+ 
+.cInfo p{
+     color: var(--gray);
+     font-size: 1.6rem;
+}
+
+/* Contact */
+
+.Contact-Dsgn{
+     margin-top: 10rem;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 2rem;
+}
+ 
+.Contact-Cont h2{
+     color: var(--strong-blue);
+     font-weight: var(--big);
+     font-family: var(--font-Heading-bold);
+     text-transform: initial;
+     font-size: 3.5rem;
+     width: 100%;
+     text-align: left;
+}
+ 
+.Contact-Cont p{
+     color: var(--gray);
+     font-size: 2rem;
+     width: 90%;
+}
+ 
+.Nurse{
+     margin-top: 10rem;
+     padding-left: 8rem;
+     background-image: url(Assets/Nurse.jpeg);
+     background-blend-mode: soft-light;
+     height: 60rem;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+} 
+ 
+.contactCards{
+     display: grid;
+     grid-template-columns: repeat(2, 2fr);
+     gap: 2rem;
+     padding: 2rem 2rem 2rem 0;
+}
+ 
+.cCards{
+     padding: 3rem;
+     border-radius: 1rem;
+     box-shadow: 0px 2px 5px rgb(216, 216, 216);
+}
+ 
+.cCard{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+ 
+.cCard i{
+     color: var(--blue);
+     font-size: 2rem;
+     background-color: var(--light-blue);
+     padding: 1.5rem;
+     border-radius: .5rem;
+     margin-right: 1rem;
+}
+ 
+.cCard h3{
+     color: var(--strong-blue);
+     font-weight: var(--big);
+     font-family: var(--font-Heading-bold);
+     text-transform: initial;
+     font-size: 2rem;
+     text-align: left;
+     margin-bottom: 0;
+}
+ 
+.cCard p{
+     color: var(--gray);
+     font-size: 1.6rem;
+     margin-top: 0;
+}
+ 
+.fadedBtn{
+     background-color: var(--light-blue);
+     color: var(--blue);
+     font-weight: var(--big);
+     font-family: var(--font-body);
+     text-align: center;
+     padding: 1rem;
+     border-radius: .5rem;
+     display: block;
+     margin: auto;
+}
+ 
+.fadedBtn:hover{
+     transition-duration: 0.4s;
+     background-color: var(--blue);
+     color: var(--light-blue);
+     font-weight: var(--regular);
+     font-family: var(--font-body);
+     text-align: center;
+     padding: 1rem;
+     border-radius: .5rem;
+     display: block;
+     margin: auto;
+}
+
+/* Footer */
+
+
+footer{
+     background-color: var(--light-blue);
+     padding: 4rem;
+}
+
+.fCon{
+     display: grid;
+     grid-template: repeat (2, 1fr);
+     gap: 2rem;
+     align-items: center;
+}
+
+.Logo-txt{    
+     color: var(--gray);
+     font-size: 1.5rem;
+     width: 60%;
+}
+ 
+.foot-nav{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 4rem;
+}
+ 
+.fNav h2{
+     color: var(--strong-blue);
+     font-weight: var(--big);
+     font-family: var(--font-Heading-bold);
+     text-transform: initial;
+     font-size: 2rem;
+     text-align: left;
+     margin-bottom: 0;
+}
+ 
+ul li{
+     margin-top: 2rem;
+}
+ 
+ul a{
+     color: var(--gray);
+     font-size: 1.5rem;    
+}
+ 
+.copyright p{
+     color: var(--gray);
+     font-size: 1.6rem;
+     margin-top: 5rem;
+     margin-bottom: 0;
+}
+ 
+.copyright{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+ 
+.copyright div{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 4rem;
+}
+
+
+/******************************************
+/* MEDIA QUERY
+/*******************************************/
+
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+/* Nav */
+
+     .Headbar{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     }
+
+     .nav{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 3rem;
+      }
+
+/* Header */
+     
+      Header{
+          position: relative;
+          display: grid;    
+          grid-template-columns: repeat(1, 2fr);
+          gap: 1rem;
+      }
+
+      .C1{
+          padding-top: 5rem;
+          padding-left: 0%;
+      }
+  
+      .C1 h1, p{
+          text-align: center;
+          margin: auto;        
+      }
+
+/* Schedule */
+
+     .Schdl{
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          gap:6rem;
+          align-items: center;
+          padding: 1rem;
+          box-shadow: 0px 10px 40px rgba(3, 19, 23, 0.25);
+          border-radius: 1rem;
+          margin: 3rem;
+          background-color: var(--white);
+      }
+     
+/* Brands */
+
+     .Brands{
+     display: grid;
+     grid-template-columns: repeat(2, 2fr);
+     gap: 1rem;
+     }
+
+/* Third Block */
+
+     .cWhy h2{
+          text-align: center;      
+     }
+
+    .cWhy p{
+          width: 100%;       
+     }
+
+    .info-cards{
+          margin-top: 10rem;
+          margin-bottom: 10rem;
+          display: grid;
+          grid-template-columns: repeat(1, 4fr);
+          gap: 2rem;
+     }
+
+/* Preparation */
+
+     .Prep-Dsgn{
+          display: grid;
+          grid-template-columns: repeat(1, 2fr);
+          gap: 2rem;
+     }
+
+     .Prep-Cont h2{
+          text-align: center;      
+     }
+
+     .Prep-Cont p{
+          width: 100%;       
+     }
+
+     .Collapse-list{
+          padding: 0%;
+     }
+
+
+
+/* Contact */
+
+     .Contact-Dsgn{
+          margin-top: 10rem;
+          display: grid;
+          grid-template-columns: repeat(1, 2fr);
+          gap: 2rem;
+     }
+
+     .Contact-Cont{
+          display: grid;
+          grid-template-columns: repeat(1, 2fr);
+          gap: 2rem;
+     }
+
+     .Contact-Cont h2{
+          text-align: center;      
+     }
+
+     .Contact-Cont p{
+          width: 100%;       
+     }
+/* Footer */
+     
+     .fCon{
+          display: grid;
+          grid-template-columns: repeat(1, 2fr);
+          gap: 2rem;
+          align-items: center;
+     }
+
+     .foot-nav{
+          display: grid;
+          grid-template-columns: repeat(2, 2fr);
+          gap: 2rem;
+     }
+
+
+}
