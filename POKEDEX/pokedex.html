@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="pokedex.css">
+  <title>Pokedex</title>
+</head>
+<body>
+<div class="pokedex">
+  <div class="left-container">
+    <div class="left-container__top-section">
+      <div class="top-section__blue"></div>
+      <div class="top-section__small-buttons">
+        <div class="top-section__red"></div>
+        <div class="top-section__yellow"></div>
+        <div class="top-section__green"></div>
+        <span class="top-section_name"> POKEDEX LAUNCH X </span>
+      </div>
+    </div>
+    <div class="left-container__main-section-container">
+      <div class="left-container__main-section">
+        <div class="main-section__white">
+          <div class="main-section__black">
+            <div class="main-screen hide">
+              <div class="screen__header">
+                <span class="poke-name"></span>
+                <span class="poke-id"></span>
+              </div>
+              <div class="screen__image">
+                <img src="" class="poke-3D-image" alt="3D pokemon">
+                <img src="" class="poke-sprite-image" alt="Front sprite">
+              </div>
+              <div class="screen__description">
+                <div class="stats__types">
+                  <span class="poke-type"> Types: </span>
+                  <span class="poke-type-one"></span>
+                  <span class="poke-type-two"></span>
+                </div>
+                <div class="screen__stats">
+                  <p class="stats__weight">
+                    Weight: <span class="poke-weight"></span>
+                  </p>
+                  <p class="stats__height">
+                    Height: <span class="poke-height"></span>
+                  </p>
+                </div>
+                <div class="screen_moveset">
+                    <span class="poke-move-one"></span>
+                    <span class="poke-move-two"></span>
+                    <span class="poke-move-three"></span>
+                    <span class="poke-move-four"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="left-container__controllers">
+          <div class="controllers__d-pad">
+            <div class="d-pad__cell top"></div>
+            <div class="d-pad__cell left"></div>
+            <div class="d-pad__cell middle"></div>
+            <div class="d-pad__cell right"></div>
+            <div class="d-pad__cell bottom"></div>
+          </div>
+          <div class="controllers__buttons">
+            <div class="buttons__button">B</div>
+            <div class="buttons__button">A</div>
+          </div>
+        </div>
+      </div>
+      <div class="left-container__right">
+        <div class="left-container__hinge"></div>
+        <div class="left-container__hinge"></div>
+      </div>
+    </div>
+  </div>
+  <div class="right-container">
+    <div class="right-container__black">
+      <div class="right-container__screen">
+        <div class="list-item"></div>
+        <div class="list-item"></div>
+        <div class="list-item"></div>
+        <div class="list-item"></div>
+        <div class="list-item"></div>
+        <div class="list-item"></div>
+        <div class="list-item"></div>
+        <div class="list-item"></div>
+        <div class="list-item"></div>
+        <div class="list-item"></div>
+        <div class="list-item"></div>
+        <div class="list-item"></div>
+        <div class="list-item"></div>
+        <div class="list-item"></div>
+        <div class="list-item"></div>
+        <div class="list-item"></div>
+        <div class="list-item"></div>
+        <div class="list-item"></div>
+        <div class="list-item"></div>
+        <div class="list-item"></div>
+      </div>
+    </div>
+    <div class="right-container__buttons">
+      <div class="left-button">Prev</div>
+      <div class="right-button">Next</div>
+    </div>
+    <div class="input-container">
+        <div class="input">
+        <input type="text"  id="pokeSearch" name="pokeSearch">
+        <button class="search-button" onclick="fetchPokemon()">Search</button>
+        </div>
+    </div>
+  </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
